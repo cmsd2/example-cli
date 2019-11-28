@@ -1,8 +1,9 @@
 [package]
 name = "example"
-version = "0.3.0"
+version = "0.1.0"
 authors = ["Chris Dawes <cmsd2@cantab.net>"]
 edition = "2018"
+license = "Apache-2.0 OR MIT"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
