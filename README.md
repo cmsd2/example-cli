@@ -1,5 +1,7 @@
 # example-cli
 
+![Build badge](https://github.com/cmsd2/example-cli/workflows/Rust/badge.svg)
+
 ## Workflow
 
 ### Trunk-based dev
