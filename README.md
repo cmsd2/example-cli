@@ -26,3 +26,5 @@
 2. Commit to master
 3. Tag with v* version
 4. Push tags
+5. CI tests and builds releases for each platform
+6. CI creates a github release and attaches binaries
