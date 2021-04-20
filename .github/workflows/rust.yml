@@ -63,6 +63,7 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-cargo-
       - name: Save sccache
+        if: matrix.os != 'windows-latest'
         uses: actions/cache@v2
         continue-on-error: false
         with:
