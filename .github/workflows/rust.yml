@@ -16,12 +16,16 @@ jobs:
         include:
           - os: ubuntu-latest
             sccache-path: /home/runner/.cache/sccache
+            rustc-wrapper: sccache
           - os: macos-latest
             sccache-path: /Users/runner/Library/Caches/Mozilla.sccache
+            rustc-wrapper: sccache
+          - os: windows-latest
+            rustc-wrapper:
 
     env:
       RUST_BACKTRACE: full
-      RUSTC_WRAPPER: sccache
+      RUSTC_WRAPPER: ${{ matrix.rustc-wrapper }}
       RUSTV: ${{ matrix.rust }}
       SCCACHE_CACHE_SIZE: 2G
       SCCACHE_DIR: ${{ matrix.sccache-path }}
